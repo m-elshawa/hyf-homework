@@ -1,0 +1,98 @@
+body {margin-left: 5px;}
+img {margin: 10px;
+     float: left;}
+nav {display: flex;
+     justify-content: flex-end;
+    }
+    
+ul {display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;}
+li {margin: 12px;}
+
+h1 {text-align: left;
+    padding: 10px;
+   margin-left: 18px;
+   margin-top: 50px;
+   font-size: 40px;
+   font-family: cursive;
+   margin-bottom: 20px;}
+
+p {width: 600px;
+   margin-left: 18px;
+}
+
+h2 {margin-left: 20px;
+    padding: 20px;
+    font-family: bold;
+    font-size: 30px;}
+
+h4 {margin-left: 20px;
+    margin-bottom: 5px;}
+
+.progress0 {width: 600px;
+            background-color: thistle; 
+            border-radius: 1em;
+            margin-left: 18px;
+            }
+.progress {border: 1px, solid;
+           width: 150px;
+           height: 2em;
+           background-color: blueviolet;
+           border-radius: 1em;
+           margin-left: 0px;
+           text-align: initial;
+           }
+.sec1 p {margin-top: 15px;
+    }
+
+form {padding-bottom: 15px;
+      box-sizing: border-box;
+}
+
+label {margin-left: 70px;
+      }
+input, select {border: 1px, solid, silver;
+              width: 300px;
+              height: 30px;
+              margin-left: 10px;
+       }
+.form-group {padding: 5px;
+             margin: auto;
+             display: flex;
+             }
+
+.lastname, .postcode  {justify-content: flex-end;
+                       padding-left: 50px;}
+
+p2 {font-size: 15px;
+   margin-left: 18px;
+   padding-top: 20px;
+   padding-bottom: 30px;}
+
+.shipping {padding-top: 20px;
+           font-size: 20px;
+           font-weight: bold;
+           
+          }
+#shippingaddress {width: 50px
+                  }
+
+h4 {font-size: 20px;
+    padding-top: 20px;}
+.profile-description {width: 600px;}
+textarea {box-sizing: border-box;
+          width: 75%;
+          height: 100px;
+          resize: none;}
+
+button {float: right;
+        width: 200px;
+        height: 70px;
+        font-size: 30px;
+        margin: 20px;
+        
+       }
+

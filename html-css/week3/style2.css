@@ -1,0 +1,60 @@
+body {margin-left: 5px;}
+img {margin: 10px;
+    float: left;}
+nav {display: flex;
+    justify-content: flex-end;
+   }
+   
+ul {display: flex;
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+   margin-top: 30px;}
+li {margin: 12px;}
+
+h1 {text-align: left;
+   padding: 10px;
+   margin-left: 18px;
+   margin-top: 50px;
+   font-size: 40px;
+   font-family: cursive;
+   margin-bottom: 20px;}
+
+p {width: 600px;
+  margin-left: 18px;
+  font-size: 17px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+h2 {margin-left: 20px;
+   padding: 20px;
+   font-family: bold;
+   font-size: 30px;}
+h4 {margin-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-bottom: 5px;}
+
+.progress0 {width: 600px;
+           background-color: thistle; 
+           border-radius: 1em;
+           margin-left: 18px;
+           }
+.progress {border: 1px, solid;
+          width: 300px;
+          height: 2em;
+          background-color: blueviolet;
+          border-radius: 1em;
+          margin-left: 0px;
+          text-align: initial;
+          }
+
+form {padding-top: 20px;
+      
+     box-sizing: border-box;
+     display: inline;}
+
+label {margin-left: 50px;}
+
+.phone {float: right;}
