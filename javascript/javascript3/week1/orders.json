@@ -1,0 +1,21 @@
+const firstOrder = {
+    "name": "Rice N Chicken", 
+    "id": 123,
+    "price": 75,
+    "list of drinks":["cola", "water", "jucie"],
+    "extras": {
+        "cheese": true,
+        "chilli": true,}
+        }
+
+
+const secondOrder = {
+    "name": "Fish N Chips", 
+    "id": 124,
+    "price": 90,
+    "list of drinks":["beer", "orange", "soda"],
+    "extras": false,
+}
+
+console.log(firstOrder);
+console.log(typeof secondOrder);
