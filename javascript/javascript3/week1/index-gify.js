@@ -13,7 +13,7 @@ searchBtn.addEventListener('click', function () {
 
    const gifyUrl = "api.giphy.com/v1/gifs/search";
 
-
+// I couldn't get the api to show all GIFS under a specific keyword, What's the problem?!
    fetch("http://api.giphy.com/v1/gifs/search?q="+ gifyValue + "&api_key="+ gifyApiKey + "&limit=5")
     .then((res) => res.json())
     .then((data) => {
