@@ -1,0 +1,5 @@
+get https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=3
+
+###
+
+get https://deckofcardsapi.com/api/deck/9jv0t3l4jcx0/draw/?count=2
