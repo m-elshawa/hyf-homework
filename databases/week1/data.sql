@@ -1,15 +1,18 @@
 --Find out how many tasks are in the task table
 
-SELECT * FROM TASK;
-SELECT COUNT(id) FROM TASK;
+SELECT COUNT(id) 
+FROM TASK;
 
 --Find out how many tasks in the task table do not have a valid due date
 
-SELECT count(title) FROM TASK WHERE (due_date IS Null);
+    SELECT count(title) 
+    FROM TASK 
+    WHERE due_date IS Null;
 
---Find all the tasks that are marked as done => What does that mean?
+--Find all the tasks that are marked as done
 
-SELECT TASK.title, STATUS.NAME FROM TASK
+SELECT TASK.title, STATUS.NAME 
+FROM TASK
 LEFT JOIN STATUS ON TASK.STATUS_ID = STATUS.ID
 WHERE STATUS.NAME = 'done';
 
@@ -26,8 +29,10 @@ ORDER BY created desc;
 
 --Get the single most recently created task// (I assumed the most recently created task is with the latest date)
 
-SELECT id, title, description, updated, due_date, status_id, user_id, MAX(created) AS mostrecent 
-FROM TASK;
+SELECT title
+FROM TASK
+ORDER BY created DESC
+LIMIT 1;
 
 --Get the title and due date of all tasks where the title or description contains database
 
@@ -35,10 +40,10 @@ SELECT title, due_date FROM TASK
 WHERE title LIKE '%database%'
 OR description LIKE '%database%';
 
---Get the title and status (as text) of all tasks (DON'T KNOW WHY IT DOESN'T WORk)
+--Get the title and status (as text) of all tasks
 
 SELECT TASK.title, STATUS.NAME FROM TASK
-LEFT JOIN STATUS ON TASK.STATUS_ID = STATUS.ID
+JOIN STATUS ON TASK.STATUS_ID = STATUS.ID;
  
 --Get the name of each status, along with a count of how many tasks have that status
 
