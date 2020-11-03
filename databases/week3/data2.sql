@@ -95,10 +95,18 @@ WHERE price <= 20;
 
 --Get meals that still has available reservations
 
-SELECT meal.title, reservation.created_date AS reservation_date
-FROM meal
-JOIN reservation ON meal.id = reservation.meal_id
-WHERE reservation.created_date > '2020-11-01';
+SELECT 
+    meal.title,
+    reservation.created_date AS reservation_date,
+    meal.max_reservations,
+    SUM(reservation.number_of_guests)
+FROM
+    meal
+JOIN
+    reservation ON meal.id = reservation.meal_id
+
+GROUP BY meal.id , reservation.created_date
+HAVING SUM(reservation.number_of_guests) < meal.max_reservations
 
 --Get meals that partially match a title. 
 
@@ -134,8 +142,10 @@ JOIN meal ON reservation.meal_id = meal.id
 WHERE meal.id = 2
 ORDER BY reservation.created_date;
 
---Sort all meals by average number of stars in the reviews (I don't understand it)
+--Sort all meals by average number of stars in the reviews
 
-SELECT AVG(review.stars) AS avg_rating, meal.title 
+SELECT meal.title, round(AVG(stars)) AS rating
 FROM meal
-LEFT JOIN review ON meal.id = review.meal_id; 
+LEFT JOIN review ON meal.id = review.meal_id
+GROUP BY meal.title
+ORDER BY rating DESC;

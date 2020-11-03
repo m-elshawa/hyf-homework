@@ -8,7 +8,7 @@ CREATE TABLE meal_sharing.Meal (
     title VARCHAR(45) NOT NULL,
     description TEXT NOT NULL,
     location VARCHAR(45) NOT NULL,
-    when DATETIME NOT NULL, -- in my workbench it didn't accept the word when
+    time DATETIME NOT NULL, -- in my workbench it didn't accept the word when
     max_reservations INT NOT NULL,
     price DECIMAL NOT NULL,
     created_date DATE NOT NULL,
