@@ -82,6 +82,7 @@ app.get("/calculator/subtract", (req, res) => {
 });
 
 //Post requests (I donno how to check if it's working)
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/calculator/multiply", (req, res) => {
   const firstParam = Number(req.body.firstParam);
